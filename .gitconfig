@@ -1,0 +1,13 @@
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[user]
+	email = palavrov@gmail.com
+	name = Atanas Palavrov
+[core]
+	filemode = true

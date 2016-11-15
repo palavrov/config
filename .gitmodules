@@ -1,0 +1,21 @@
+[submodule "/Users/palavrov/.vim/pack/common/start/vim-fugitive"]
+	path = /Users/palavrov/.vim/pack/common/start/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "/Users/palavrov/.vim/pack/common/start/vim-colors-solarized"]
+	path = /Users/palavrov/.vim/pack/common/start/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "/Users/palavrov/.vim/pack/common/start/minibufexpl"]
+	path = /Users/palavrov/.vim/pack/common/start/minibufexpl
+	url = git://github.com/fholgado/minibufexpl.vim.git
+[submodule "/Users/palavrov/.vim/pack/common/start/vim-javascript"]
+	path = /Users/palavrov/.vim/pack/common/start/vim-javascript
+	url = git://github.com/pangloss/vim-javascript.git
+[submodule "/Users/palavrov/.vim/pack/common/start/MatchTagAlways"]
+	path = /Users/palavrov/.vim/pack/common/start/MatchTagAlways
+	url = git://github.com/Valloric/MatchTagAlways.git
+[submodule "/Users/palavrov/.vim/pack/common/start/tern_for_vim"]
+	path = /Users/palavrov/.vim/pack/common/start/tern_for_vim
+	url = git://github.com/ternjs/tern_for_vim.git
+[submodule "/Users/palavrov/.vim/pack/common/start/vim-js-context-coloring"]
+	path = /Users/palavrov/.vim/pack/common/start/vim-js-context-coloring
+	url = git://github.com/bigfish/vim-js-context-coloring.git
