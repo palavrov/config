@@ -9,16 +9,26 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew tap codigi/homebrew-codigi
 brew install nodejs git hub bash-completion
 brew install --with-override-system-vi vim
-brew cask install firefox opera google-chrome
+brew cask install firefox opera google-chrome vivaldi
 brew cask install skype viber telegram telegram-desktop
 brew cask install slack
-brew cask install stremio
+brew cask install stremio kodi spotify
+
+# Development
+brew install binwalk lsusb minicom
+brew cask install pl2303 paragon-ntfs paragon-extfs
+
+# Android development
+# brew cask install java
+# brew install android-sdk
 
 # TTK QT development
 # brew install qt5 --with-qtwebkit
 # brew link --force qt5
+# brew install boost qtftp tufao
 
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 hub clone --bare palavrov/config $HOME/.cfg

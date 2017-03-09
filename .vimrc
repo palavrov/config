@@ -130,3 +130,7 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " Force 'Gdiff' to split the window vertically
 set diffopt+=vertical
+
+" https://robots.thoughtbot.com/how-to-do-90-of-what-plugins-do-with-just-vim
+set path+=**
+
