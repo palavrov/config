@@ -17,6 +17,9 @@ brew cask install skype viber telegram telegram-desktop
 brew cask install slack
 brew cask install stremio kodi spotify
 
+brew install yarn
+yarn global add yarn-completions
+
 # Development
 brew install binwalk lsusb minicom
 brew cask install pl2303 paragon-ntfs paragon-extfs
