@@ -16,6 +16,6 @@
 [submodule "tern_for_vim"]
 	path = .vim/pack/common/start/tern_for_vim
 	url = git://github.com/ternjs/tern_for_vim.git
-[submodule "vim-js-context-coloring"]
-	path = .vim/pack/common/start/vim-js-context-coloring
-	url = git://github.com/bigfish/vim-js-context-coloring.git
+[submodule ".vim/pack/common/start/vim-jsx"]
+	path = .vim/pack/common/start/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
