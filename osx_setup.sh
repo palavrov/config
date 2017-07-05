@@ -31,6 +31,8 @@ brew cask install pl2303 paragon-ntfs paragon-extfs
 # TTK QT development
 # brew install qt5 --with-qtwebkit
 # brew link --force qt5
+# sudo ln -s -f /usr/local/Cellar/qt5/5.9.1/mkspecs /usr/local/mkspecs
+# sudo ln -s -f /usr/local/Cellar/qt5/5.9.1/plugins /usr/local/plugins
 # brew install boost qtftp tufao
 
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
