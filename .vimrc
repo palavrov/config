@@ -134,3 +134,6 @@ set diffopt+=vertical
 " https://robots.thoughtbot.com/how-to-do-90-of-what-plugins-do-with-just-vim
 set path+=**
 
+" https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
