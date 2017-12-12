@@ -19,3 +19,6 @@
 [submodule ".vim/pack/common/start/vim-jsx"]
 	path = .vim/pack/common/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule ".vim/pack/common/start/typescript-vim"]
+	path = .vim/pack/common/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
