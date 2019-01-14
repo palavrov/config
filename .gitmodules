@@ -22,3 +22,6 @@
 [submodule ".vim/pack/common/start/typescript-vim"]
 	path = .vim/pack/common/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule ".vim/pack/common/start/AnsiEsc"]
+	path = .vim/pack/common/start/AnsiEsc
+	url = https://github.com/vim-scripts/AnsiEsc.vim
