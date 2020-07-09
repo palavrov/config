@@ -14,6 +14,9 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -F '
 
+# https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html
+set -o vi
+
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 alias config='hub --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
