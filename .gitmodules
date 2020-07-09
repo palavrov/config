@@ -7,21 +7,3 @@
 [submodule "minibufexpl"]
 	path = .vim/pack/common/start/minibufexpl
 	url = git://github.com/fholgado/minibufexpl.vim.git
-[submodule "vim-javascript"]
-	path = .vim/pack/common/start/vim-javascript
-	url = git://github.com/pangloss/vim-javascript.git
-[submodule "MatchTagAlways"]
-	path = .vim/pack/common/start/MatchTagAlways
-	url = git://github.com/Valloric/MatchTagAlways.git
-[submodule "tern_for_vim"]
-	path = .vim/pack/common/start/tern_for_vim
-	url = git://github.com/ternjs/tern_for_vim.git
-[submodule ".vim/pack/common/start/vim-jsx"]
-	path = .vim/pack/common/start/vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
-[submodule ".vim/pack/common/start/typescript-vim"]
-	path = .vim/pack/common/start/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
-[submodule ".vim/pack/common/start/AnsiEsc"]
-	path = .vim/pack/common/start/AnsiEsc
-	url = https://github.com/vim-scripts/AnsiEsc.vim
