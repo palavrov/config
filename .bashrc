@@ -95,6 +95,8 @@ PS2_ELEMENTS=(
 )
 export PS2=$(IFS=; echo "${PS2_ELEMENTS[*]}")
 
+shopt -s histverify
+
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 alias config='hub --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
