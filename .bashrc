@@ -2,6 +2,9 @@
 # -bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8)
 export LC_CTYPE="en_US.UTF-8"
 
+# https://www.addictivetips.com/mac-os/hide-default-interactive-shell-is-now-zsh-in-terminal-on-macos/
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
