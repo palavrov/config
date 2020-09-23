@@ -23,29 +23,29 @@ set -o vi
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
-BRANCH_COLOR="\e[91m"
+C_BRANCH="\e[91m"
 
 # https://redandblack.io/blog/2020/bash-prompt-with-updating-time/
-DELIMETER_COLOR="\e[m"
-DIRECTORY="\w"
-DIRECTORY_COLOR="\e[33;1m"
-USER="\u"
-USER_COLOR="\e[36m"
-HOST="\h"
-HOST_COLOR="\e[32m"
-DOUBLE_SPACE="  "
-NEWLINE="\n"
-NO_COLOUR="\e[00m"
+C_DELIMETER="\e[m"
+T_DIRECTORY="\w"
+C_DIRECTORY="\e[33;1m"
+T_USER="\u"
+C_USER="\e[36m"
+T_HOST="\h"
+C_HOST="\e[32m"
+T_DOUBLE_SPACE="  "
+T_NEWLINE="\n"
+NO_COLOR="\e[00m"
 PRINTING_OFF="\["
 PRINTING_ON="\]"
-PROMPT_COLOUR="\e[0;33m"
+C_PROPMT="\e[0;33m"
 PS1_PROMPT="\$"
 PS2_PROMPT=">"
 RESTORE_CURSOR_POSITION="\e[u"
 SAVE_CURSOR_POSITION="\e[s"
-SINGLE_SPACE=" "
-TIMESTAMP="\A"
-TIMESTAMP_PLACEHOLDER="--:--"
+T_SPACE=" "
+T_TIMESTAMP="\A"
+T_TIMESTAMP_PLACEHOLDER="--:--"
 
 move_cursor_to_start_of_ps1() {
     command_rows=$(history 1 | wc -l)
@@ -65,33 +65,33 @@ move_cursor_to_start_of_ps1() {
 PS0_ELEMENTS=(
     "$SAVE_CURSOR_POSITION"
     "\$(move_cursor_to_start_of_ps1)"
-    "$PROMPT_COLOUR" "$TIMESTAMP" "$NO_COLOUR"
+    "$C_PROPMT" "$T_TIMESTAMP" "$NO_COLOR"
     "$RESTORE_CURSOR_POSITION"
 )
 export PS0=$(IFS=; echo "${PS0_ELEMENTS[*]}")
 
 PS1_ELEMENTS=(
     # Empty line after last command.
-    "$NEWLINE"
+    "$T_NEWLINE"
     # First line of prompt.
-    "$PRINTING_OFF" "$PROMPT_COLOUR"   "$PRINTING_ON" "$TIMESTAMP" "$DOUBLE_SPACE"
-    "$PRINTING_OFF" "$USER_COLOR"      "$PRINTING_ON" "$USER"
-    "$PRINTING_OFF" "$DELIMETER_COLOR" "$PRINTING_ON" "@"
-    "$PRINTING_OFF" "$HOST_COLOR"      "$PRINTING_ON" "$HOST"
-    "$PRINTING_OFF" "$DELIMETER_COLOR" "$PRINTING_ON" ":"
-    "$PRINTING_OFF" "$DIRECTORY_COLOR" "$PRINTING_ON" "$DIRECTORY"
-    "$PRINTING_OFF" "$DELIMETER_COLOR" "$PRINTING_ON" "$SINGLE_SPACE"
-    "$PRINTING_OFF" "$BRANCH_COLOR"    "$PRINTING_ON" "\$(parse_git_branch)"
-    "$PRINTING_OFF" "$NO_COLOUR"       "$PRINTING_ON" "$NEWLINE"
+    "$PRINTING_OFF" "$C_PROPMT"    "$PRINTING_ON" "$T_TIMESTAMP" "$T_DOUBLE_SPACE"
+    "$PRINTING_OFF" "$C_USER"      "$PRINTING_ON" "$T_USER"
+    "$PRINTING_OFF" "$C_DELIMETER" "$PRINTING_ON" "@"
+    "$PRINTING_OFF" "$C_HOST"      "$PRINTING_ON" "$T_HOST"
+    "$PRINTING_OFF" "$C_DELIMETER" "$PRINTING_ON" ":"
+    "$PRINTING_OFF" "$C_DIRECTORY" "$PRINTING_ON" "$T_DIRECTORY"
+    "$PRINTING_OFF" "$C_DELIMETER" "$PRINTING_ON" "$T_SPACE"
+    "$PRINTING_OFF" "$C_BRANCH"    "$PRINTING_ON" "\$(parse_git_branch)"
+    "$PRINTING_OFF" "$NO_COLOR"    "$PRINTING_ON" "$T_NEWLINE"
     # Second line of prompt.
-    "$PRINTING_OFF" "$PROMPT_COLOUR"   "$PRINTING_ON" "$PS1_PROMPT" "$SINGLE_SPACE"
-    "$PRINTING_OFF" "$NO_COLOUR"       "$PRINTING_ON"
+    "$PRINTING_OFF" "$C_PROPMT" "$PRINTING_ON" "$PS1_PROMPT" "$T_SPACE"
+    "$PRINTING_OFF" "$NO_COLOR" "$PRINTING_ON"
 )
 export PS1=$(IFS=; echo "${PS1_ELEMENTS[*]}")
 
 PS2_ELEMENTS=(
-    "$PRINTING_OFF" "$PROMPT_COLOUR"   "$PRINTING_ON" "$PS2_PROMPT" "$SINGLE_SPACE"
-    "$PRINTING_OFF" "$NO_COLOUR"       "$PRINTING_ON"
+    "$PRINTING_OFF" "$C_PROPMT" "$PRINTING_ON" "$PS2_PROMPT" "$T_SPACE"
+    "$PRINTING_OFF" "$NO_COLOR" "$PRINTING_ON"
 )
 export PS2=$(IFS=; echo "${PS2_ELEMENTS[*]}")
 
