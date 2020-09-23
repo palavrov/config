@@ -108,4 +108,5 @@ alias config='hub --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 complete -o default -o nospace -F _git config
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_NDK_HOME=/usr/local/share/android-ndk
 export PATH="/usr/local/sbin:$PATH"
