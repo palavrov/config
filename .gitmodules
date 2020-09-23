@@ -7,3 +7,12 @@
 [submodule "minibufexpl"]
 	path = .vim/pack/common/start/minibufexpl
 	url = git://github.com/fholgado/minibufexpl.vim.git
+[submodule ".vim/pack/common/start/java-syntax.vim"]
+	path = .vim/pack/common/start/java-syntax.vim
+	url = git@github.com:uiiaoo/java-syntax.vim.git
+[submodule ".vim/pack/common/start/vim-pbxproj"]
+	path = .vim/pack/common/start/vim-pbxproj
+	url = git@github.com:cfdrake/vim-pbxproj.git
+[submodule ".vim/pack/common/start/vim-ruby"]
+	path = .vim/pack/common/start/vim-ruby
+	url = git@github.com:vim-ruby/vim-ruby.git
