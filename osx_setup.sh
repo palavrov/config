@@ -7,7 +7,7 @@ defaults write com.apple.finder AppleShowAllFiles TRUE
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Install homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 brew tap codigi/homebrew-codigi
 brew install nodejs git hub bash-completion
