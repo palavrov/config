@@ -3,7 +3,7 @@ dotfiles repo
 
 # Install
 ```bash
-curl -Lks http://raw.githubusercontent.com/palavrov/config/master/osx_setup.sh | /bin/bash
+curl -H 'Cache-Control: no-cache' -Lks http://raw.githubusercontent.com/palavrov/config/master/osx_setup.sh | arch -x86_64 /bin/bash
 ```
 # WARNING
 Vim plugins are installed as git submodules. By default git creates them with full path:
