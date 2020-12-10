@@ -10,30 +10,30 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 brew tap codigi/homebrew-codigi
-brew install nodejs git hub bash-completion
-brew install --with-override-system-vi vim
-brew cask install firefox opera google-chrome vivaldi
-brew cask install skype viber telegram telegram-desktop
-brew cask install slack
-brew cask install stremio kodi spotify
-
-brew install yarn
-yarn global add yarn-completions
+brew install bash-completion
+brew install firefox opera google-chrome vivaldi brave-browser dissenter-browser
+brew install skype viber telegram telegram-desktop amazon-chime zoomus slack
+brew install deepl
+brew install stremio kodi spotify
+brew install gog-galaxy
 
 # Development
-brew install binwalk lsusb minicom
-brew cask install pl2303 paragon-ntfs paragon-extfs
-
+brew install vim visual-studio-code
+brew install git hub bash-git-prompt git-gui git-delta
+brew install unrar xz
+brew install nodejs sqlite
+brew install binwalk lsusb minicom nmap wget
+brew install hex-fiend meld xquartz
+brew install paragon-ntfs paragon-extfs
+brew install prolific-pl2303 ftdi-vcp-driver wch-ch34x-usb-serial-driver
+brew install gcc-arm-embedded gdbm
+brew install balenaetcher bluetility packetsender saleae-logic wireshark
+# Segger tools
+brew install segger-embedded-studio-for-arm segger-jlink segger-ozone
+# Nordic tools
+brew install nordic-nrf-command-line-tools nordic-nrf-connect
 # Android development
-# brew cask install java
-# brew install android-sdk
-
-# TTK QT development
-# brew install qt5 --with-qtwebkit
-# brew link --force qt5
-# sudo ln -s -f /usr/local/Cellar/qt5/5.9.1/mkspecs /usr/local/mkspecs
-# sudo ln -s -f /usr/local/Cellar/qt5/5.9.1/plugins /usr/local/plugins
-# brew install boost qtftp tufao
+brew install openjdk android-file-transfer android-sdk android-platform-tools android-studio android-ndk
 
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 hub clone --bare palavrov/config $HOME/.cfg
