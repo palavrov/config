@@ -27,13 +27,13 @@ brew install hex-fiend meld xquartz
 brew install paragon-ntfs paragon-extfs
 brew install prolific-pl2303 ftdi-vcp-driver wch-ch34x-usb-serial-driver
 brew install gcc-arm-embedded gdbm
-brew install balenaetcher bluetility packetsender saleae-logic wireshark
+brew install --cask balenaetcher bluetility packetsender saleae-logic wireshark
 # Segger tools
-brew install segger-embedded-studio-for-arm segger-jlink segger-ozone
+brew install --cask segger-embedded-studio-for-arm segger-jlink segger-ozone
 # Nordic tools
-brew install nordic-nrf-command-line-tools nordic-nrf-connect
+brew install --cask nordic-nrf-command-line-tools nordic-nrf-connect
 # Android development
-brew install openjdk android-file-transfer android-sdk android-platform-tools android-studio android-ndk
+brew install --cask openjdk android-file-transfer android-sdk android-platform-tools android-studio android-ndk
 
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 hub clone --bare palavrov/config $HOME/.cfg
