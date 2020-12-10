@@ -19,7 +19,7 @@ brew install gog-galaxy
 
 # Development
 brew install vim visual-studio-code
-brew install git hub bash-git-prompt git-gui git-delta
+brew install git bash-git-prompt git-gui git-delta
 brew install unrar xz
 brew install nodejs sqlite
 brew install binwalk lsusb minicom nmap wget
@@ -36,9 +36,9 @@ brew install --cask nordic-nrf-command-line-tools nordic-nrf-connect
 brew install --cask openjdk android-file-transfer android-sdk android-platform-tools android-studio android-ndk
 
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
-hub clone --bare palavrov/config $HOME/.cfg
+git clone --bare git@github.com:palavrov/config.git $HOME/.config.git
 function config {
-    hub --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
+    git --git-dir=$HOME/.config.git/ --work-tree=$HOME $@
 }
 config checkout
 if [ $? = 0 ]; then
