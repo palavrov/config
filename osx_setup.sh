@@ -20,7 +20,7 @@ brew install gog-galaxy
 
 # Development
 brew install vim visual-studio-code
-brew install git bash-git-prompt git-gui git-delta
+brew install git bash-git-prompt git-gui git-delta tig
 brew install unrar xz
 brew install nodejs sqlite
 brew install binwalk lsusb minicom nmap wget
