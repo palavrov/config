@@ -42,7 +42,6 @@ git clone --bare git@github.com:palavrov/config.git $HOME/.config.git
 function config {
     git --git-dir=$HOME/.config.git/ --work-tree=$HOME $@
 }
-config checkout
 
 function mvp () {
     dir="$2"
@@ -52,6 +51,8 @@ function mvp () {
     mkdir -p "$dir" &&
     mv "$@"
 }
+
+config checkout
 
 if [ $? = 0 ]; then
     echo "Checked out config.";
@@ -70,4 +71,4 @@ config config status.showUntrackedFiles no
 # cd ~/.vim/pack/common/start/vim-js-context-coloring && npm install
 
 # Cleanup
-# rm -rf .cfg/ .bash_profile  .bashrc .gitconfig .gitmodules  .ssh/config .ssh/sockets/ .vim/ .viminfo .vimrc  osx_setup.sh README.md
+# rm -rf .config.git/ .bash_profile  .bashrc .gitconfig .gitmodules  .ssh/config .ssh/sockets/ .vim/ .viminfo .vimrc  osx_setup.sh README.md
