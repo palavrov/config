@@ -43,12 +43,22 @@ function config {
     git --git-dir=$HOME/.config.git/ --work-tree=$HOME $@
 }
 config checkout
+
+function mvp () {
+    dir="$2"
+    tmp="$2"; tmp="${tmp: -1}"
+    [ "$tmp" != "/" ] && dir="$(dirname "$2")"
+    [ -a "$dir" ] ||
+    mkdir -p "$dir" &&
+    mv "$@"
+}
+
 if [ $? = 0 ]; then
     echo "Checked out config.";
 else
     mkdir -p .config-backup
     echo "Backing up pre-existing dot files.";
-    config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
+    config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mvp {} .config-backup/{}
 fi;
 config checkout
 config submodule update --init --recursive
