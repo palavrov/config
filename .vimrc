@@ -130,6 +130,8 @@ nnoremap <Leader>q :call g:ClangUpdateQuickFix()<CR>
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " Force 'Gdiff' to split the window vertically
+" https://github.com/thoughtbot/dotfiles/issues/655#issuecomment-605019271
+set diffopt-=internal
 set diffopt+=vertical
 
 " https://robots.thoughtbot.com/how-to-do-90-of-what-plugins-do-with-just-vim
