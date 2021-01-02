@@ -8,8 +8,6 @@ filetype off                  " required!
 filetype plugin indent on    " required
 filetype plugin on
 
-syntax enable
-
 " Set max open tabs at startup
 set tabpagemax=99
 
@@ -29,6 +27,9 @@ set hidden
 colorscheme solarized
 set background=dark
 let g:solarized_termcolors=256
+
+" Must be after "colorscheme solarized" to avoid OSX messed colors
+syntax enable
 
 " Show command in bottom right
 set showcmd
