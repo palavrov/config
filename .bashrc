@@ -105,7 +105,7 @@ alias config='git --git-dir=$HOME/.config.git/ --work-tree=$HOME'
 
 # Enable config autocomplete
 # https://github.com/github/hub/blob/3021e584ee14ebe115a3634fe983d59f56d8e103/etc/hub.bash_completion.sh#L365
-complete -o default -o nospace -F _git config
+complete -o default -o nospace -F __git_wrap__git_main config
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export ANDROID_NDK_HOME=/usr/local/share/android-ndk

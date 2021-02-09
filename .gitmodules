@@ -16,3 +16,9 @@
 [submodule ".vim/pack/common/start/vim-ruby"]
 	path = .vim/pack/common/start/vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby.git
+[submodule ".vim/pack/common/start/coc.nvim"]
+	path = .vim/pack/common/start/coc.nvim
+	url = git@github.com:neoclide/coc.nvim.git
+[submodule ".vim/pack/common/start/typescript-vim"]
+	path = .vim/pack/common/start/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
