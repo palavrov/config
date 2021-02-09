@@ -1,3 +1,6 @@
+# Add Homebrew to PATH
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # OSX Lion ssh logon:
 # -bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8)
 export LC_CTYPE="en_US.UTF-8"
