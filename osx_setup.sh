@@ -34,8 +34,7 @@ brew install segger-embedded-studio-for-arm segger-jlink segger-ozone
 # Nordic tools
 brew install nordic-nrf-command-line-tools nordic-nrf-connect
 # Android development
-brew install openjdk android-file-transfer android-sdk android-platform-tools android-studio android-ndk
-brew install openjdk android-file-transfer android-sdk android-platform-tools android-studio android-ndk
+brew install openjdk android-file-transfer android-platform-tools android-studio android-ndk
 
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 git clone --bare git@github.com:palavrov/config.git $HOME/.config.git
