@@ -1,3 +1,7 @@
+[credential]
+	helper = cache --timeout 360
+[color]
+	ui = true
 [diff]
 	tool = vimdiff
 [merge]
@@ -7,9 +11,10 @@
 [mergetool]
 	prompt = false
 [user]
-	email = palavrov@gmail.com
 	name = Atanas Palavrov
+	email = atanas.palavrov.external@worldline.com
 [core]
+	abbrev = 7
 	filemode = true
 	editor = vim
 [alias]

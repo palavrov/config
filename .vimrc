@@ -24,7 +24,7 @@ set timeoutlen=1000
 set hidden
 
 " Set color scheme
-colorscheme solarized
+colorscheme slate
 set background=dark
 let g:solarized_termcolors=256
 
@@ -142,6 +142,8 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 " https://medium.com/swlh/ultimate-vim-typescript-setup-35b5ac5c8c4e
 let g:coc_global_extensions = [ 'coc-clangd', 'coc-css', 'coc-html', 'coc-json', 'coc-sh', 'coc-tsserver' ]
+
+let g:coc_disable_startup_warning = 1
 
 " https://github.com/neoclide/coc.nvim
 " Some servers have issues with backup files, see #649.
