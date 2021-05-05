@@ -75,9 +75,9 @@ set wildmode=list:longest
 set completeopt=longest,menuone
 
 " Space instead of tab characters
-set tabstop=4
-set shiftwidth=4
-set expandtab
+set tabstop=8
+set shiftwidth=8
+set noexpandtab
 
 " Replace visual selection
 " http://stackoverflow.com/questions/676600/vim-replace-selected-text

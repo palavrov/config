@@ -118,12 +118,6 @@ fi
 
 ######## APA
 
-# http://osxdaily.com/2013/02/05/improve-terminal-appearance-mac-os-x/
-# http://apple.stackexchange.com/a/33679
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-alias ls='ls -F '
-
 # https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html
 set -o vi
 
@@ -215,6 +209,4 @@ alias config='git --git-dir=$HOME/.config.git/ --work-tree=$HOME'
 # https://github.com/github/hub/blob/3021e584ee14ebe115a3634fe983d59f56d8e103/etc/hub.bash_completion.sh#L365
 complete -o default -o nospace -F __git_wrap__git_main config
 
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export ANDROID_NDK_HOME=/usr/local/share/android-ndk
 export PATH="/usr/local/sbin:$PATH"
